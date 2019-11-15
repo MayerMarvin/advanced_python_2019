@@ -3,4 +3,4 @@
 # otherwise the import statements won't work
 
 # lets load core into the name space as well
-from . import core
+from . import core, core_black

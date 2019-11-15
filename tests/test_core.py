@@ -16,11 +16,11 @@ import playground
 
 def test_find_peaks():
     peaks = playground.core.find_peaks([0, 2, 1])
-    assert peaks == [2]  
+    assert peaks == [1]  
     
 def test_find_two_peaks():
     peaks = playground.core.find_peaks([0, 2, 1, 0, 2, 1])
-    assert peaks == [2, 2] 
+    assert peaks == [1, 4] 
 
 def test_find_peaks_max_edge():
     peaks = playground.core.find_peaks([2, 1, 1])
@@ -28,4 +28,6 @@ def test_find_peaks_max_edge():
     
 def test_find_peaks_empty_list():
     peaks = playground.core.find_peaks([])
+    print("yeah")
     assert peaks == [] 
+#test_find_peaks_empty_list()
