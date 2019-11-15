@@ -23,7 +23,7 @@ def test_find_two_blacks():
     assert peaks == [1, 4] 
 
 def test_find_blacks_max_edge():
-    peaks = playground.core_black.find_blacks([0, 0, 0], [200,0,0], [0,10,0],[0, 0, 0])
+    peaks = playground.core_black.find_blacks([[0, 0, 0], [200,0,0], [0,10,0],[0, 0, 0]])
     assert peaks == [] 
     
 def test_find_blacks_empty_list():
